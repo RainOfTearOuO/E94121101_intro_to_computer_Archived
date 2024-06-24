@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Judge</title>
+</head>
+
+<body>
+    <h3>Score Chart</h3>
+    <hr>
+
+    <form action='/set', method = 'POST'>
+        Store&nbspName&nbsp<input type='text' name='store_name'>
+        <br>
+        &nbsp&nbsp&nbsp&nbsp&nbspScore&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type='text' name='score'>
+        <br>
+        <button>submit</button>
+    </form>
+    <br>
+    <h3>Current&nbspData:&nbsp{{ dict_json }}</h3> <!--put the dict var here-->
+</body> 
+
+</html>
